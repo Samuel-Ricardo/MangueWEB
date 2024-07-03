@@ -11,4 +11,13 @@ class FlutterSerialPortGateway implements SerialPortGateway {
   void _openConnection() {
     engine.openReadWrite();
   }
+
+  @override
+  String read(int bytes) {
+    _openConnection();
+
+    Uint8List buffer = engine.read(bytes);
+
+    return buffer.toString();
+  }
 }
