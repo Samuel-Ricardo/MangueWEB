@@ -1,4 +1,4 @@
 abstract class SerialPortGateway {
-  String write(String data);
+  int write(String data);
   String read(int bytes);
 }
