@@ -25,4 +25,9 @@ class DartHttpGateway implements HttpGateway {
   Future<http.Response> patch(Object data) async {
     return await http.patch(_url, body: data);
   }
+
+  @override
+  Future<http.Response> delete() async {
+    return await http.delete(_url);
+  }
 }
