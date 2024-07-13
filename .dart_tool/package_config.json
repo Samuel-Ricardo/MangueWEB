@@ -218,6 +218,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "logging",
+      "rootUri": "file:///C:/Users/Desktop/AppData/Local/Pub/Cache/hosted/pub.dev/logging-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "matcher",
       "rootUri": "file:///C:/Users/Desktop/AppData/Local/Pub/Cache/hosted/pub.dev/matcher-0.12.16+1",
       "packageUri": "lib/",
@@ -260,6 +266,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "pool",
+      "rootUri": "file:///C:/Users/Desktop/AppData/Local/Pub/Cache/hosted/pub.dev/pool-1.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "provider",
       "rootUri": "file:///C:/Users/Desktop/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.1.1",
       "packageUri": "lib/",
@@ -272,6 +284,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "shelf",
+      "rootUri": "file:///C:/Users/Desktop/AppData/Local/Pub/Cache/hosted/pub.dev/shelf-1.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///C:/Users/Desktop/Desktop/Apps/flutter/flutter_windows_3.22.2-stable/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -282,6 +300,12 @@
       "rootUri": "file:///C:/Users/Desktop/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "sse",
+      "rootUri": "file:///C:/Users/Desktop/AppData/Local/Pub/Cache/hosted/pub.dev/sse-4.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
     },
     {
       "name": "stack_trace",
@@ -398,7 +422,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-07-10T21:32:08.456992Z",
+  "generated": "2024-07-13T19:24:31.961202Z",
   "generator": "pub",
   "generatorVersion": "3.4.3",
   "flutterRoot": "file:///C:/Users/Desktop/Desktop/Apps/flutter/flutter_windows_3.22.2-stable/flutter",
