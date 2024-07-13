@@ -8,19 +8,21 @@ class DartHttpGateway implements HttpGateway {
 
   @override
   Future<http.Response> get() async {
-    var result = await http.get(_url);
-    return result;
+    return await http.get(_url);
   }
 
   @override
   Future<http.Response> post(Object data) async {
-    var result = await http.post(_url, body: data);
-    return result;
+    return await http.post(_url, body: data);
   }
 
   @override
   Future<http.Response> put(Object data) async {
-    var result = await http.put(_url, body: data);
-    return result;
+    return await http.put(_url, body: data);
+  }
+
+  @override
+  Future<http.Response> patch(Object data) async {
+    return await http.patch(_url, body: data);
   }
 }
