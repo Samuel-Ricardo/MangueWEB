@@ -1,10 +1,10 @@
-class PowertrainDTO {
+class Powertrain {
   final double speed;
   final double rpm;
   final _Temperature temperature;
   final double? timestamp;
 
-  PowertrainDTO(
+  Powertrain(
       {required this.speed,
       required this.rpm,
       required this.temperature,
