@@ -1,7 +1,7 @@
 class Powertrain {
   final double speed;
   final double rpm;
-  final _Temperature temperature;
+  final PowertrainTemperature temperature;
   final double? timestamp;
 
   Powertrain(
@@ -9,11 +9,21 @@ class Powertrain {
       required this.rpm,
       required this.temperature,
       this.timestamp});
+
+  factory Powertrain.fromJson(Map<String, dynamic> json) {
+    return Powertrain(
+        speed: json['speed'] as double,
+        rpm: json['rpm'] as double,
+        temperature: PowertrainTemperature(
+            engine: json['temperature']['engine'] as double,
+            cvt: json['temperature']['cvt'] as double),
+        timestamp: json['timestamp'] as double?);
+  }
 }
 
-class _Temperature {
+class PowertrainTemperature {
   final double engine;
   final double cvt;
 
-  _Temperature({required this.engine, required this.cvt});
+  PowertrainTemperature({required this.engine, required this.cvt});
 }

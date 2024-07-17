@@ -1,3 +1,3 @@
 abstract class SSEGateway {
-  Stream<String> subscribe([String? path]);
+  Future<Stream<String>> subscribe([String? path]);
 }
