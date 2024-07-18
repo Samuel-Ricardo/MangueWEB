@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mangueweb/modules/application/gateway/http/factory.dart';
+import 'package:mangueweb/modules/application/gateway/http/sse/abc.dart';
 
 void main() {
   group("[SUIT] | GATEWAY: HTTP [DART]", () {
