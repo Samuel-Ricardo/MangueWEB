@@ -26,4 +26,14 @@ class Battery {
       timestamp: map['timestamp'] as double?,
     );
   }
+
+  Map<String, dynamic> toMap() {
+    return {
+      'voltage': voltage,
+      'stateOfCharge': stateOfCharge,
+      'timestamp': timestamp,
+    };
+  }
+
+  String toJson() => jsonEncode(toMap());
 }
