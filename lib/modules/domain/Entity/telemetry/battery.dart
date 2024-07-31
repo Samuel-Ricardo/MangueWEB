@@ -22,4 +22,12 @@ class Battery {
       timestamp: parsedJson['timestamp'] as double?,
     );
   }
+
+  factory Battery.fromMap(Map<String, dynamic> map) {
+    return Battery(
+      voltage: map['voltage'] as double,
+      stateOfCharge: map['stateOfCharge'] as double,
+      timestamp: map['timestamp'] as double?,
+    );
+  }
 }
