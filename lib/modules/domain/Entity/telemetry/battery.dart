@@ -16,11 +16,7 @@ class Battery {
   factory Battery.fromJson(String json) {
     Map<String, dynamic> parsedJson = jsonDecode(json);
 
-    return Battery(
-      voltage: parsedJson['voltage'] as double,
-      stateOfCharge: parsedJson['stateOfCharge'] as double,
-      timestamp: parsedJson['timestamp'] as double?,
-    );
+    return Battery.fromMap(parsedJson);
   }
 
   factory Battery.fromMap(Map<String, dynamic> map) {
