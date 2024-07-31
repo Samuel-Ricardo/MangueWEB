@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 class Geography {
   final double latitude;
   final double longitude;
@@ -11,5 +13,10 @@ class Geography {
       longitude: map['longitude'] as double,
       timestamp: map['timestamp'] as double?,
     );
+  }
+
+  factory Geography.fromJson(String json) {
+    Map<String, dynamic> parsedJson = jsonDecode(json);
+    return Geography.fromMap(parsedJson);
   }
 }
