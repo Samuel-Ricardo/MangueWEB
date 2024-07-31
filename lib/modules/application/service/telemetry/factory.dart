@@ -5,5 +5,5 @@ import 'package:mangueweb/modules/application/use_case/telemetry/factory.dart';
 PowertrainHttpService instaceOfPowertrainHttpService() =>
     PowertrainHttpService(instaceOfReadPowertrainByHttpTelemetryUseCase());
 
-BatteryTelemetryService instanceOfBatteryHttpGateway() =>
+BatteryTelemetryService instanceOfBatteryTelemetryService() =>
     BatteryTelemetryService(instaceOfReadBatteryByHttpTelemetryUseCase());
