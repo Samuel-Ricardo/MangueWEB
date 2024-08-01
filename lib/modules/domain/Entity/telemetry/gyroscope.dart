@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 class GyroscopeAcceleration {
   final double x;
   final double y;
@@ -11,5 +13,9 @@ class GyroscopeAcceleration {
       json['y'] as double,
       json['z'] as double,
     );
+  }
+
+  factory GyroscopeAcceleration.fromJson(String json) {
+    return GyroscopeAcceleration.fromMap(jsonDecode(json));
   }
 }
