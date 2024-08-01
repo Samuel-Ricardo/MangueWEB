@@ -7,6 +7,16 @@ class Gyroscope {
   final double? yaw;
 
   Gyroscope(this.acceleration, this.roll, this.pitch, this.yaw);
+
+  factory Gyroscope.fromMap(Map<String, dynamic> json) {
+    return Gyroscope(
+      GyroscopeAcceleration.fromMap(
+          json['acceleration'] as Map<String, dynamic>),
+      json['roll'] as double,
+      json['pitch'] as double,
+      json['yaw'] as double?,
+    );
+  }
 }
 
 class GyroscopeAcceleration {
