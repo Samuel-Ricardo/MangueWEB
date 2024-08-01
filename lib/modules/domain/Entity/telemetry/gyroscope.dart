@@ -1,5 +1,14 @@
 import 'dart:convert';
 
+class Gyroscope {
+  final GyroscopeAcceleration acceleration;
+  final double roll;
+  final double pitch;
+  final double? yaw;
+
+  Gyroscope(this.acceleration, this.roll, this.pitch, this.yaw);
+}
+
 class GyroscopeAcceleration {
   final double x;
   final double y;
