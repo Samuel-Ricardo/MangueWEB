@@ -8,6 +8,10 @@ class Gyroscope {
 
   Gyroscope(this.acceleration, this.roll, this.pitch, this.yaw);
 
+  factory Gyroscope.fromJson(String json) {
+    return Gyroscope.fromMap(jsonDecode(json));
+  }
+
   factory Gyroscope.fromMap(Map<String, dynamic> json) {
     return Gyroscope(
       GyroscopeAcceleration.fromMap(
